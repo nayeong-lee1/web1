@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2de3e66701.js" crossorigin="anonymous"></script>
+    <title>Web4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- header -->
+    <header>
+        <nav> <!-- this is overlay nav -->      
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#" id="home" >Home</a>
+                    <a href="#" id="about" >About</a>
+                    <a href="#" id="services" >Services</a>
+                    <a href="#" id="contact" >Contact</a>
+                    <a href="#" id="home" >News</a>
+                </div> 
+            </div> 
+            <!-- these are logo and button for nav -->
+            <span class="dropdown-menu">       
+                <button class="menu-btn" onclick="openNav()"><i class="fas fa-bars fa-4x"></i></button>
+            </span>   
+            <img src="css/pic4.jpg" alt="logo" id="logo">
+        </nav>
+    </header>
+<!-- cover page -->
+    <div class="section-a">
+        <div class="coverpage">
+            <p class="coverpage-p1">찾아가는</p><p>장애인 인식개선 교육</p>
+        </div>
+    </div>
+
+<!-- about -->
+    <div class="section-b">
+        <div class="about">
+            <div class="about-pic">
+                <!-- <img src="css/pic1.jpg" alt=""> -->
+            </div>
+            <div class="about-content">
+                <h3 id="about-content-title"> This is me</h3>
+                <p id="about-content-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit odio at ipsam, quod maxime quasi iusto excepturi, asperiores nam explicabo reiciendis commodi saepe quas assumenda aliquam natus nihil dignissimos error?</p>
+            </div> 
+        </div>
+    </div>
+<!-- services -->
+    <div class="section-c">
+        <div class="services">
+            <div id="service-title">
+                <h2>Services</h2>
+            </div>
+            <div id="service-gallery">
+                <div class="box">
+                    <img src="css/pic2.jpg" alt="">
+                    <h3>인식개선교육1</h3>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Learn more</a>
+                </div>
+          
+                <div class="box">
+                    <img src="css/pic2.jpg" alt="">
+                    <h3>인식개선교육2</h3>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Learn more</a>
+                </div>
+        
+                <div class="box">
+                    <img src="css/pic2.jpg" alt="">   
+                    <h3>인식개선교육3</h3>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Learn more</a>
+                </div>
+             </div>
+        </div>
+    </div>
+<!-- contact -->
+    <div class="contact-title"><h2>Contact Us</h2></div>
+    <div class="section-d">
+        <div class="contact-form">
+
+            <div class="contact-box">
+                <label for="fname">Frist name</label>
+                <input type="text" id="fname" name="fname">
+            </div>
+            <div class="contact-box">
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname">
+            </div>
+            <div class="contact-box">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="contact-box">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+            </div>   
+            <div class="contact-box">
+                <label for="message">Message</label>
+                <input type="text" id="message" name="message">
+            </div>  
+        </div>
+        <div class="contact-info">
+            <div class="contact-info-box address">
+                <h3>Address</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, neque?</p>
+            </div>
+            <div class="contact-info-box phone">
+                <h3>Phone</h3>
+                <p>000-0000-0000</p>
+            </div>
+            <div class="contact-info-box email">
+                <h3>Email</h3>
+                <p>myemail@gmail.com</p>
+            </div>
+        </div>
+    </div>
+<!-- footer -->
+    <footer>
+        <div class="site-footer">
+            <p>Copyright &copy;2020 All rights reserved  </p>
+        </div>
+    </footer>
+
+
+
+<script src="app.js"></script>
+</body>
+</html>
