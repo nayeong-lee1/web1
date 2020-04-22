@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     top: 0;
+    box-sizing: border-box;
     font-family: 'Do Hyeon', sans-serif;
 }
 body {
@@ -58,13 +59,15 @@ body {
 
 header {
     background-color: white;
-    height: 60px;
+    height: 9vh;
+    width: 100%;
 }
 
 #logo {
-    width: 70px;
-    margin: 7px;
+    height: 7vh;
+    margin: 10px 7px auto auto;
     float: right;
+    border-radius: 50px;
 }
 
 .menu-btn {
@@ -89,6 +92,11 @@ header {
     display: block;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 /* COVER PAGE */
 
@@ -105,7 +113,9 @@ header {
 }
 
 .coverpage-p1 {
-    padding-top: 45vh;
+    padding-top: 20vh;
+    padding-bottom: auto;
+
 }
 
 .coverpage p {
@@ -130,6 +140,10 @@ header {
     text-align: center;
     padding: 20px;
     line-height: 2em;
+}
+
+.about-content p {
+    padding: 0 10vw;
 }
 
 /* Services */
@@ -194,12 +208,34 @@ header {
 }
 
 .contact-box input {
-    font-size: 2em;
+    font-size: 1.3em;
+    height: 2em;
+    width: 75vw;
     border-radius: 20px;
     border: 2px solid #565656;
     margin: 10px auto;
+    display: block;
+    padding-left: 10px;
 }
 
+#message {
+    width: 75vw;
+    height: 15vh;
+    padding-left: 10px;
+    border-radius: 20px;
+    border: 2px solid #565656;
+    margin: 10px auto;
+    display: block;
+    font-size: 1.3em;
+}
+
+#submitBtn {
+    border-radius: 10px;
+    background-color: #76323F;
+    color: white;
+    font-size: 1.3em;
+    padding: 10px 20px;
+}
 .contact-info {
     background-color: white;
     border-radius: 20px;
@@ -233,33 +269,41 @@ header {
         margin: 7em 3em;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        text-align: center;
 
     }
 
     .about-pic {
-
         background-image: url(pic1.jpg);
         background-size: cover;  
         border-radius: 20px 0 0 20px;
     }
 
-    /* .about-pic img {
-        height: 100%;
-        border-radius: 20px 0 0 20px;
-    } */
-
-    .about-content {
-        text-align: center;
-        padding: 30px;
-        line-height: 2em;
-        margin-top: 1em;
+    .about-pic img {
+        display: none;
     }
 
+    .about-content {
+        text-align: left;
+        padding: 30px;
+        line-height: 2em;
+        margin: auto;
+    }
+
+    .about-content p {
+        padding: 0;
+    }
+    
+    
         /* Services */
 
     #service-gallery {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        width: 70vw;
+        height: 35vh;
+        margin-left: 15vw;
+    
     }
     .box {
         background-color: white;
@@ -274,17 +318,30 @@ header {
     
     .section-d {
         display: grid;
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
         margin: 2em 15px;
     }
+
     .contact-form {
-        width: 400px;
+        width: 50vw;
         margin: 0;
         justify-self: right;
     }
 
+    .contact-box {
+        padding: 10px 20px;
+    }
 
+    .contact-box input {
+        height: 2em;
+        width: 300px;
+        border-radius: 20px;
+        border: 2px solid #565656;
+        margin: 5px auto;
+        display: block;
+        padding-left: 10px;
+    }
     .contact-info {
         background-color: white;
         border-radius: 20px;
@@ -294,13 +351,81 @@ header {
         justify-self: left;
     }
 
+    #message {
+        width: 300px;
+        height: 15vh;
+        padding-left: 10px;
+        border-radius: 20px;
+        border: 2px solid #565656;
+        margin: 10px auto;
+        display: block;
+    }
     .contact-info-box {
         margin-bottom: 20px;
+
     }
 
+    /* contact */
+
+
+
 
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1024px) {
+    
+    .about {
+        background-color: white;
+        border-radius: 20px;
+        width: 70vw;
+        height: 50vh;
+        margin-top: 7em;
+        margin-left: 15vw;
+    }
 
+   /* #service-gallery {
+       width: 70vw;
+       height: 35vh;
+       margin-left: 15vw;
+   } */
+
+   .contact-form {
+        width: 40vw;
+        height: 85vh;
+    }
+
+    .contact-box label {
+        display: block;
+        font-size: 1.5em;
+        text-align: left;
+    }
+
+    .contact-box input {
+        height: 2em;
+        font-size: 1.2em;
+        width: 35vw;
+        border-radius: 20px;
+        border: 2px solid #565656;
+        margin: 10px auto;
+        display: block;
+        padding-left: 10px;
+    }
+    
+    #message {
+        width: 35vw;
+        height: 15vh;
+        font-size: 1.2em;
+        padding-left: 10px;
+        border-radius: 20px;
+        border: 2px solid #565656;
+        margin: 10px auto;
+        display: block;
+    }
 }
+
+@media only screen and (min-width: 1440px) {
+    .contact-form {
+        height: 85vh;
+    }
+}
+

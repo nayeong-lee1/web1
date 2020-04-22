@@ -9,37 +9,36 @@
 </head>
 <body>
 <!-- header -->
-    <header>
+    <header id="navBar">
         <nav> <!-- this is overlay nav -->      
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
-                    <a href="#" id="home" >Home</a>
-                    <a href="#" id="about" >About</a>
-                    <a href="#" id="services" >Services</a>
-                    <a href="#" id="contact" >Contact</a>
-                    <a href="#" id="home" >News</a>
+                    <a href="index.html#section-a" id="home" >Home</a>
+                    <a href="index.html#section-b" id="about" >About</a>
+                    <a href="index.html#section-c" id="services" >Services</a>
+                    <a href="index.html#section-d" id="contact" >Contact</a>
                 </div> 
             </div> 
             <!-- these are logo and button for nav -->
             <span class="dropdown-menu">       
-                <button class="menu-btn" onclick="openNav()"><i class="fas fa-bars fa-4x"></i></button>
+                <button class="menu-btn" onclick="openNav()"><i class="fas fa-bars fa-6x"></i></button>
             </span>   
             <img src="css/pic4.jpg" alt="logo" id="logo">
         </nav>
     </header>
 <!-- cover page -->
-    <div class="section-a">
+    <div id="section-a">
         <div class="coverpage">
-            <p class="coverpage-p1">찾아가는</p><p>장애인 인식개선 교육</p>
+            <p class="coverpage-p1">찾아가는</p><p>장애인</p> <p>인식개선 교육</p>
         </div>
     </div>
 
 <!-- about -->
-    <div class="section-b">
+    <div id="section-b">
         <div class="about">
             <div class="about-pic">
-                <!-- <img src="css/pic1.jpg" alt=""> -->
+                <img src="css/pic1.jpg" alt="">
             </div>
             <div class="about-content">
                 <h3 id="about-content-title"> This is me</h3>
@@ -48,7 +47,7 @@
         </div>
     </div>
 <!-- services -->
-    <div class="section-c">
+    <div id="section-c">
         <div class="services">
             <div id="service-title">
                 <h2>Services</h2>
@@ -76,9 +75,8 @@
     </div>
 <!-- contact -->
     <div class="contact-title"><h2>Contact Us</h2></div>
-    <div class="section-d">
+    <div id="section-d">
         <div class="contact-form">
-
             <div class="contact-box">
                 <label for="fname">Frist name</label>
                 <input type="text" id="fname" name="fname">
@@ -97,8 +95,11 @@
             </div>   
             <div class="contact-box">
                 <label for="message">Message</label>
-                <input type="text" id="message" name="message">
+                <textarea id="message"></textarea>
             </div>  
+            <div class="contact-btn">
+                <button id="submitBtn">Submit</button>
+            </div>
         </div>
         <div class="contact-info">
             <div class="contact-info-box address">
@@ -124,6 +125,8 @@
 
 
 
-<script src="app.js"></script>
+<script src="js/overlayNavApp.js"></script>
+<script src="js/stickyNav.js"></script>
+
 </body>
 </html>
